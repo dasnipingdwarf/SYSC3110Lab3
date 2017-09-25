@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 public class AddressBook {
-	private ArrayList<BuddyInfo> buddies;
+	private static ArrayList<BuddyInfo> buddies;
 	
 	public AddressBook() {
 		buddies = new ArrayList<>();
@@ -8,14 +8,16 @@ public class AddressBook {
 	
 	public static void main(String[] args) {
 		System.out.println("Address Book");
+		addBuddy(new BuddyInfo());
+		removeBuddy(0);
 		
 	}
 	
-	public void addBuddy(BuddyInfo toAdd) {
+	public static void addBuddy(BuddyInfo toAdd) {
 		buddies.add(toAdd);		
 	}
 	
-	public void removeBuddy(int index) {
+	public static void removeBuddy(int index) {
 		buddies.remove(index);
 		
 	}
