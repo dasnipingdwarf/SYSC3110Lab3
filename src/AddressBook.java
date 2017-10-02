@@ -42,5 +42,9 @@ public class AddressBook {
 		return(buddies.size());	
 	}
 	
+	public void clearBuddiesList() {
+		buddies = new ArrayList<BuddyInfo>();
+	}
+	
 	
 }
