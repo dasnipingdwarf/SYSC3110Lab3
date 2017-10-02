@@ -38,5 +38,9 @@ public class AddressBook {
 		return(null);
 	}
 	
+	public int getSizeOfBuddies(){
+		return(buddies.size());	
+	}
+	
 	
 }
